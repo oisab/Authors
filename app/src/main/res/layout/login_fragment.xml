@@ -27,8 +27,9 @@
 
          <androidx.appcompat.widget.AppCompatEditText
              android:id="@+id/loginTextField"
-             android:layout_width="300dp"
+             android:layout_width="match_parent"
              android:layout_height="wrap_content"
+             android:layout_marginHorizontal="25dp"
              android:fontFamily="sans-serif-light"
              android:textColor="@color/white"
              android:textSize="20sp"
@@ -44,8 +45,9 @@
 
          <androidx.appcompat.widget.AppCompatEditText
              android:id="@+id/passwordTextField"
-             android:layout_width="300dp"
+             android:layout_width="match_parent"
              android:layout_height="wrap_content"
+             android:layout_marginHorizontal="25dp"
              android:fontFamily="sans-serif-light"
              android:textColor="@color/white"
              android:textSize="20sp"
@@ -62,11 +64,11 @@
 
          <androidx.appcompat.widget.AppCompatButton
              android:id="@+id/loginButton"
-             android:layout_width="300dp"
-             android:layout_height="50dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginHorizontal="25dp"
              android:textColor="#F5F5DC"
              android:background="@drawable/button_default_background"
-             android:shadowDy="100"
              android:textSize="20sp"
              android:fontFamily="sans-serif-light"
              android:textAllCaps="false"

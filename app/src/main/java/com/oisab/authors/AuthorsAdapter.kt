@@ -37,7 +37,6 @@ class AuthorsAdapter: RecyclerView.Adapter<AuthorsAdapter.AuthorsViewHolder>() {
             if (model.icon > 0){
                 iconView.setImageResource(model.icon)
             }
-
             textView.text = model.name
         }
     }

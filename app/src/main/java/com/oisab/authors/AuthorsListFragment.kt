@@ -8,18 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 class AuthorsListFragment : Fragment(R.layout.authors_list_fragment) {
     private val authorsAdapter = AuthorsAdapter()
-    private lateinit var authorsView: RecyclerView
-
-    companion object {
-        fun newInstance(): AuthorsListFragment {
-            return AuthorsListFragment()
-        }
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        authorsView = view.findViewById(R.id.authorsView)
+        val authorsView: RecyclerView = view.findViewById(R.id.authorsView)
         authorsView.adapter = authorsAdapter
         authorsView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         generateData()
