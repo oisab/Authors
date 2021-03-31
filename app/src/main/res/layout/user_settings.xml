@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/userLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textColorHint="@color/black"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:hint="@string/last_name"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/userFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textColorHint="@color/black"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:hint="@string/first_name"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/savetUserDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_default_background"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:text="@string/save_user_data"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
