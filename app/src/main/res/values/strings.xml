@@ -2,9 +2,11 @@
     <string name="app_name">Authors</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
-    <string name="log_in">Log in</string>
+    <string name="log_in_button">Log in</string>
     <string name="forgot_password">Forgot password?</string>
-    <string name="sign_up">Registration</string>
+    <string name="sign_up_button">Registration</string>
     <string name="welcome_to_cozylib">Welcome to CozyLib!</string>
-    <string name="test_fragment">Test Fragment</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="save_user_data">Save</string>
 </resources>
