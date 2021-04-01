@@ -24,15 +24,15 @@ fun saveUserData(sharedPref: SharedPreferences, lastNameKey: String, lastNameVal
         state.value = SettingsState.SaveSucceededState
     }
 
-    private fun saveStringData(sharedPref: SharedPreferences, key: String, value: String) {
-        sharedPref.edit()
-            .putString(key, value)
-            .apply()
-    }
-
     fun setEditTextValue(sharedPref: SharedPreferences, lastNameKey: String, lastNameValue: AppCompatEditText,
                          firstNameKey: String, firstNameValue: AppCompatEditText) {
         lastNameValue.setText(sharedPref.getString(lastNameKey, ""))
         firstNameValue.setText(sharedPref.getString(firstNameKey, ""))
+    }
+
+    private fun saveStringData(sharedPref: SharedPreferences, key: String, value: String) {
+        sharedPref.edit()
+            .putString(key, value)
+            .apply()
     }
 }

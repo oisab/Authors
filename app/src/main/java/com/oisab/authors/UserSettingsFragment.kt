@@ -18,14 +18,14 @@ class UserSettingsFragment : Fragment(R.layout.user_settings) {
         super.onViewCreated(view, savedInstanceState)
 
         val userSharedPref = activity!!.getSharedPreferences("USER_SETTINGS", Context.MODE_PRIVATE)
-        val userLastName: AppCompatEditText = view.findViewById(R.id.userLastName) // create EditTexts
-        val userFirstName: AppCompatEditText = view.findViewById(R.id.userFirstName)
-        val saveUserDataButton: AppCompatButton = view.findViewById(R.id.savetUserDataButton)
+        val lastNameEditText: AppCompatEditText = view.findViewById(R.id.userLastName) // create EditTexts
+        val firstNameEditText: AppCompatEditText = view.findViewById(R.id.userFirstName)
+        val saveUserDataButton: AppCompatButton = view.findViewById(R.id.saveUserDataButton)
 
         saveUserDataButton.setOnClickListener{
-            userSettingsViewModel.saveUserData(userSharedPref, LAST_NAME, userLastName, FIRST_NAME, userFirstName)
+            userSettingsViewModel.saveUserData(userSharedPref, LAST_NAME, lastNameEditText, FIRST_NAME, firstNameEditText)
         }
-        userSettingsViewModel.setEditTextValue(userSharedPref, LAST_NAME, userLastName, FIRST_NAME, userFirstName)
+        userSettingsViewModel.setEditTextValue(userSharedPref, LAST_NAME, lastNameEditText, FIRST_NAME, firstNameEditText)
         observeSaveButton()
     }
 
@@ -33,7 +33,7 @@ class UserSettingsFragment : Fragment(R.layout.user_settings) {
         userSettingsViewModel.state.observe(viewLifecycleOwner, Observer<SettingsState> { state ->
             when (state) {
                 is SettingsState.DefaultState -> {
-                    showToast("DefaultState")
+                    showToast("Default state")
                 }
                 is SettingsState.InChangingProcess -> {
                     showToast("In changing process")

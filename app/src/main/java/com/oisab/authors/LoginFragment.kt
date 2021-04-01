@@ -37,8 +37,8 @@ class LoginFragment : Fragment(R.layout.login_fragment) {
                     showToast("Sending login")
                 }
                 is LoginState.LoginSucceededState -> {
-                    showToast("Success authorization")
-                    Thread.sleep(3_000)
+                    showToast("Successful authorization")
+                    Thread.sleep(2_000)
                     logInAccount()
                 }
                 is LoginState.ErrorState -> {
