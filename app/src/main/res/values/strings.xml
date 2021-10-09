@@ -2,9 +2,18 @@
     <string name="app_name">Authors</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
-    <string name="log_in">Log in</string>
+    <string name="log_in_button">Log in</string>
     <string name="forgot_password">Forgot password?</string>
-    <string name="sign_up">Registration</string>
+    <string name="sign_up_button">Registration</string>
     <string name="welcome_to_cozylib">Welcome to CozyLib!</string>
-    <string name="test_fragment">Test Fragment</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="save_user_data">Save</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="account">Account</string>
+    <string name="orders">Orders</string>
+    <string name="buy">Buy</string>
+    <string name="my_books">My books</string>
+    <string name="e_mail">E-mail</string>
+    <string name="phone_number">Phone number</string>
 </resources>
