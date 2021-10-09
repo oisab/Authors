@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/booksOrderFragment"
+        android:name="com.oisab.authors.screens.main.orders.BooksOrderFragment"
+        android:label="BooksOrderFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.oisab.authors.screens.start.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_navigationContainerFragment2"
+            app:destination="@id/navigationContainerFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationContainerFragment2"
+        android:name="com.oisab.authors.screens.NavigationContainerFragment"
+        android:label="NavigationContainerFragment" >
+        <action
+            android:id="@+id/action_navigationContainerFragment2_to_suggestedAuthorsFragment"
+            app:destination="@id/suggestedAuthorsFragment" />
+        <action
+            android:id="@+id/action_navigationContainerFragment2_to_userSettingsFragment"
+            app:destination="@id/userSettingsFragment" />
+        <action
+            android:id="@+id/action_navigationContainerFragment2_to_booksOrderFragment"
+            app:destination="@id/booksOrderFragment" />
+        <action
+            android:id="@+id/action_navigationContainerFragment2_to_myBooksFragment"
+            app:destination="@id/myBooksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/suggestedAuthorsFragment"
+        android:name="com.oisab.authors.screens.main.suggestions.SuggestedAuthorsFragment"
+        android:label="SuggestedAuthorsFragment" />
+    <fragment
+        android:id="@+id/userSettingsFragment"
+        android:name="com.oisab.authors.screens.main.account.UserSettingsFragment"
+        android:label="UserSettingsFragment" />
+    <fragment
+        android:id="@+id/myBooksFragment"
+        android:name="com.oisab.authors.screens.main.mybooks.MyBooksFragment"
+        android:label="MyBooksFragment" />
+</navigation>

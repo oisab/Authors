@@ -1,4 +1,4 @@
-package com.oisab.authors
+    package com.oisab.authors.screens.start
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
